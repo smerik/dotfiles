@@ -97,7 +97,7 @@ mymainmenu = awful.menu({
 
 mylauncher = awful.widget.launcher({
   image = image(beautiful.awesome_icon),
-  menu = mymainmenu 
+  menu = mymainmenu
 })
 -- }}}
 
