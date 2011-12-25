@@ -14,4 +14,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-exec awesome
+# Start window manager
+exec awesome & wmpid=$!
+
+# Start additional applications
+# TODO: implement me
+
+# Wait until window manager has stopped
+wait $wmpid
