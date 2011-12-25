@@ -11,9 +11,11 @@ require("naughty")
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
 if awesome.startup_errors then
-  naughty.notify({ preset = naughty.config.presets.critical,
-  title = "Oops, there were errors during startup!",
-  text = awesome.startup_errors })
+  naughty.notify({
+    preset = naughty.config.presets.critical,
+    title = "Oops, there were errors during startup!",
+    text = awesome.startup_errors
+  })
 end
 
 -- Handle runtime errors after startup
@@ -53,8 +55,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
-layouts =
-{
+layouts = {
   awful.layout.suit.floating,
   awful.layout.suit.tile,
   awful.layout.suit.tile.left,
@@ -231,7 +232,7 @@ function ()
   awful.client.focus.byidx(-1)
   if client.focus then client.focus:raise() end
 end),
-awful.key({ modkey,           }, "w", function () mymainmenu:show({keygrabber=true}) end),
+awful.key({ modkey,           }, "w", function () mymainmenu:show({ keygrabber=true }) end),
 
 -- Layout manipulation
 awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
@@ -267,33 +268,33 @@ awful.key({ modkey, "Control" }, "n", awful.client.restore),
 awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
 awful.key({ modkey }, "x",
-function ()
-  awful.prompt.run({ prompt = "Run Lua code: " },
-  mypromptbox[mouse.screen].widget,
-  awful.util.eval, nil,
-  awful.util.getdir("cache") .. "/history_eval")
-end)
+  function ()
+    awful.prompt.run({ prompt = "Run Lua code: " },
+    mypromptbox[mouse.screen].widget,
+    awful.util.eval, nil,
+    awful.util.getdir("cache") .. "/history_eval")
+  end)
 )
 
 clientkeys = awful.util.table.join(
-awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
-awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
-awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
-awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
-awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
-awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
-awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end),
-awful.key({ modkey,           }, "n",
-function (c)
-  -- The client currently has the input focus, so it cannot be
-  -- minimized, since minimized clients can't have the focus.
-  c.minimized = true
-end),
-awful.key({ modkey,           }, "m",
-function (c)
-  c.maximized_horizontal = not c.maximized_horizontal
-  c.maximized_vertical   = not c.maximized_vertical
-end)
+  awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
+  awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
+  awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
+  awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
+  awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
+  awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
+  awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end),
+  awful.key({ modkey,           }, "n",
+    function (c)
+      -- The client currently has the input focus, so it cannot be
+      -- minimized, since minimized clients can't have the focus.
+      c.minimized = true
+    end),
+  awful.key({ modkey,           }, "m",
+    function (c)
+      c.maximized_horizontal = not c.maximized_horizontal
+      c.maximized_vertical   = not c.maximized_vertical
+  end)
 )
 
 -- Compute the maximum number of digit we need, limited to 9
@@ -307,38 +308,44 @@ end
 -- This should map on the top row of your keyboard, usually 1 to 9.
 for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
-  awful.key({ modkey }, "#" .. i + 9,
-  function ()
-    local screen = mouse.screen
-    if tags[screen][i] then
-      awful.tag.viewonly(tags[screen][i])
-    end
-  end),
-  awful.key({ modkey, "Control" }, "#" .. i + 9,
-  function ()
-    local screen = mouse.screen
-    if tags[screen][i] then
-      awful.tag.viewtoggle(tags[screen][i])
-    end
-  end),
-  awful.key({ modkey, "Shift" }, "#" .. i + 9,
-  function ()
-    if client.focus and tags[client.focus.screen][i] then
-      awful.client.movetotag(tags[client.focus.screen][i])
-    end
-  end),
-  awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
-  function ()
-    if client.focus and tags[client.focus.screen][i] then
-      awful.client.toggletag(tags[client.focus.screen][i])
-    end
-  end))
+    awful.key({ modkey }, "#" .. i + 9,
+      function ()
+        local screen = mouse.screen
+        if tags[screen][i] then
+          awful.tag.viewonly(tags[screen][i])
+        end
+      end
+    ),
+    awful.key({ modkey, "Control" }, "#" .. i + 9,
+      function ()
+        local screen = mouse.screen
+        if tags[screen][i] then
+          awful.tag.viewtoggle(tags[screen][i])
+        end
+      end
+    ),
+    awful.key({ modkey, "Shift" }, "#" .. i + 9,
+      function ()
+        if client.focus and tags[client.focus.screen][i] then
+          awful.client.movetotag(tags[client.focus.screen][i])
+        end
+      end
+    ),
+    awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
+      function ()
+        if client.focus and tags[client.focus.screen][i] then
+          awful.client.toggletag(tags[client.focus.screen][i])
+        end
+      end
+    )
+  )
 end
 
 clientbuttons = awful.util.table.join(
-awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
-awful.button({ modkey }, 1, awful.mouse.client.move),
-awful.button({ modkey }, 3, awful.mouse.client.resize))
+  awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
+  awful.button({ modkey }, 1, awful.mouse.client.move),
+  awful.button({ modkey }, 3, awful.mouse.client.resize)
+)
 
 -- Set keys
 root.keys(globalkeys)
@@ -348,17 +355,23 @@ root.keys(globalkeys)
 awful.rules.rules = {
   -- All clients will match this rule.
   { rule = { },
-  properties = { border_width = beautiful.border_width,
-  border_color = beautiful.border_normal,
-  focus = true,
-  keys = clientkeys,
-  buttons = clientbuttons } },
+    properties = {
+      border_width = beautiful.border_width,
+      border_color = beautiful.border_normal,
+      focus = true,
+      keys = clientkeys,
+      buttons = clientbuttons
+    }
+  },
   { rule = { class = "MPlayer" },
-  properties = { floating = true } },
+    properties = { floating = true }
+  },
   { rule = { class = "pinentry" },
-  properties = { floating = true } },
+    properties = { floating = true }
+  },
   { rule = { class = "gimp" },
-  properties = { floating = true } },
+    properties = { floating = true }
+  },
   -- Set Firefox to always map on tags number 2 of screen 1.
   -- { rule = { class = "Firefox" },
   --   properties = { tag = tags[1][2] } },
