@@ -83,10 +83,10 @@ end
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 myawesomemenu = {
-  { "manual", terminal .. " -e man awesome" },
-  { "edit config", editor_cmd .. " " .. awesome.conffile },
-  { "restart", awesome.restart },
-  { "quit", awesome.quit }
+  { "manual"      , terminal .. " -e man awesome" },
+  { "edit config" , editor_cmd .. " " .. awesome.conffile },
+  { "restart"     , awesome.restart },
+  { "quit"        , awesome.quit }
 }
 
 myofficemenu = {
@@ -100,9 +100,9 @@ myofficemenu = {
 
 mymainmenu = awful.menu({
   items = {
-    { "awesome", myawesomemenu, beautiful.awesome_icon },
-    { "office", myofficemenu },
-    { "open terminal", terminal }
+    { "awesome"       , myawesomemenu, beautiful.awesome_icon },
+    { "office"        , myofficemenu },
+    { "open terminal" , terminal }
   }
 })
 
