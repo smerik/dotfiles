@@ -88,9 +88,19 @@ myawesomemenu = {
   { "quit", awesome.quit }
 }
 
+myofficemenu = {
+  { "Base"    , "libreoffice --base"    },
+  { "Calc"    , "libreoffice --calc"    },
+  { "Draw"    , "libreoffice --draw"    },
+  { "Impress" , "libreoffice --impress" },
+  { "Math"    , "libreoffice --math"    },
+  { "Writer"  , "libreoffice --writer"  }
+}
+
 mymainmenu = awful.menu({
   items = {
     { "awesome", myawesomemenu, beautiful.awesome_icon },
+    { "office", myofficemenu },
     { "open terminal", terminal }
   }
 })
