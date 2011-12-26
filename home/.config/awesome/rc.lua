@@ -163,8 +163,8 @@ myofficemenu = {
 -- START util menu
 myscreenshotmenu = {
   { "5 s delay", "" },
-  { "frame"       , "" },
-  { "desktop"     , "" }
+  { "frame"    , "" },
+  { "desktop"  , "" }
 }
 
 myutilmenu = {
