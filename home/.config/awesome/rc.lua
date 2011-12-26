@@ -174,7 +174,7 @@ myutilmenu = {
 
 
 -- START system menu
-mypowermenu = {
+mymachinemenu = {
   { "reboot"     , "" },
   { "shutdown"   , "" },
   { "stand by"   , "" },
@@ -182,7 +182,7 @@ mypowermenu = {
 }
 
 mysystemmenu = {
-  { "power"      , mypowermenu },
+  { "machine"    , mymachinemenu },
   { "lock screen", "" },
   { "update"     , "" }
 }
