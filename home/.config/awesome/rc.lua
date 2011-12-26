@@ -318,11 +318,13 @@ end
 -- }}}
 
 -- {{{ Mouse bindings
-root.buttons(awful.util.table.join(
-awful.button({ }, 3, function () mymainmenu:toggle() end),
-awful.button({ }, 4, awful.tag.viewnext),
-awful.button({ }, 5, awful.tag.viewprev)
-))
+root.buttons(
+  awful.util.table.join(
+    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 4, awful.tag.viewnext),
+    awful.button({ }, 5, awful.tag.viewprev)
+  )
+)
 -- }}}
 
 -- {{{ Key bindings
@@ -402,7 +404,8 @@ clientkeys = awful.util.table.join(
       -- The client currently has the input focus, so it cannot be
       -- minimized, since minimized clients can't have the focus.
       c.minimized = true
-    end),
+    end
+  ),
   awful.key(
     { modkey,           }, "m",
     function (c)
