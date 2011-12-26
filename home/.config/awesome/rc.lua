@@ -281,7 +281,7 @@ mytasklist.buttons = awful.util.table.join(
 for s = 1, screen.count() do
   -- Create a promptbox for each screen
   mypromptbox[s] = awful.widget.prompt({ layout = awful.widget.layout.horizontal.leftright })
-  -- Create an imagebox widget which will contains an icon indicating which layout we're using.
+  -- Create an imagebox widget which will contain an icon indicating which layout we're using.
   -- We need one layoutbox per screen.
   mylayoutbox[s] = awful.widget.layoutbox(s)
   mylayoutbox[s]:buttons(awful.util.table.join(
@@ -422,7 +422,7 @@ for s = 1, screen.count() do
 end
 
 -- Bind all key numbers to tags.
--- Be careful: we use keycodes to make it works on any keyboard layout.
+-- Be careful: we use keycodes to make it work on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
 for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
