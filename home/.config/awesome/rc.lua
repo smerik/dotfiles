@@ -87,14 +87,68 @@ end
 -- }}}
 
 -- {{{ Menu
--- Create a laucher widget and a main menu
+-- START awesome menu
 myawesomemenu = {
   { "manual"      , terminal .. " -e man awesome" },
   { "edit config" , editor_cmd .. " " .. awesome.conffile },
   { "restart"     , awesome.restart },
   { "quit"        , awesome.quit }
 }
+-- END awesome menu
 
+
+-- START development menu
+mydevelopmentmenu = {
+  { "Eclipse" , "" },
+  { "NetBeans", "" },
+  { "Vim"     , "" }
+}
+-- END development menu
+
+
+-- START internet menu
+mybrowsermenu = {
+  { "Chromium", "" },
+  { "Firefox" , "" },
+  { "Opera"   , "" }
+}
+
+mychatmenu = {
+  { "Pidgin" , "" },
+  { "WeeChat", "" }
+}
+
+myinternetmenu = {
+  { "browser", mybrowsermenu },
+  { "chat"   , mychatmenu },
+  { "mail"   , "" }
+}
+-- END internet menu
+
+
+-- START media menu
+myaudiomenu = {
+  { "Audacity", "" },
+  { "ncmpc++", ""}
+}
+
+myimagemenu = {
+  { "GIMP", "" }
+}
+
+myvideomenu = {
+  { "", "" }
+}
+
+mymediamenu = {
+  { "audio", myaudiomenu },
+  { "image", myimagemenu },
+  { "video", myvideomenu }
+}
+-- END media menu
+
+
+-- START office menu
 myofficemenu = {
   { "Base"    , "libreoffice --base"    },
   { "Calc"    , "libreoffice --calc"    },
@@ -103,13 +157,50 @@ myofficemenu = {
   { "Math"    , "libreoffice --math"    },
   { "Writer"  , "libreoffice --writer"  }
 }
+-- END office menu
 
+
+-- START util menu
+myscreenshotmenu = {
+  { "5 sec. delay", "" },
+  { "frame"       , "" },
+  { "desktop"     , "" }
+}
+
+myutilmenu = {
+  { "screenshot", myscreenshotmenu }
+}
+-- END util menu
+
+
+-- START system menu
+mypowermenu = {
+  { "reboot"     , "" },
+  { "shutdown"   , "" },
+  { "stand by"   , "" },
+  { "suspend"    , "" }
+}
+
+mysystemmenu = {
+  { "power"      , mypowermenu },
+  { "lock screen", "" },
+  { "update"     , "" }
+}
+-- END system menu
+
+
+-- Now let's combine all pieces together
 mymainmenu = awful.menu(
   {
     items = {
-      { "awesome"       , myawesomemenu, beautiful.awesome_icon },
-      { "office"        , myofficemenu },
-      { "open terminal" , terminal }
+      { "awesome"      , myawesomemenu, beautiful.awesome_icon },
+      { "development"  , mydevelopmentmenu },
+      { "internet"     , myinternetmenu },
+      { "media"        , mymediamenu },
+      { "office"       , myofficemenu },
+      { "system"       , mysystemmenu },
+      { "util"         , myutilmenu },
+      { "open terminal", terminal }
     }
   }
 )
