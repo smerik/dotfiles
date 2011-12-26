@@ -129,7 +129,7 @@ myinternetmenu = {
 -- START media menu
 myaudiomenu = {
   { "Audacity", "" },
-  { "ncmpc++", ""}
+  { "ncmpc++" , "" }
 }
 
 myimagemenu = {
@@ -150,12 +150,12 @@ mymediamenu = {
 
 -- START office menu
 myofficemenu = {
-  { "Base"    , "libreoffice --base"    },
-  { "Calc"    , "libreoffice --calc"    },
-  { "Draw"    , "libreoffice --draw"    },
-  { "Impress" , "libreoffice --impress" },
-  { "Math"    , "libreoffice --math"    },
-  { "Writer"  , "libreoffice --writer"  }
+  { "Base"   , "libreoffice --base"    },
+  { "Calc"   , "libreoffice --calc"    },
+  { "Draw"   , "libreoffice --draw"    },
+  { "Impress", "libreoffice --impress" },
+  { "Math"   , "libreoffice --math"    },
+  { "Writer" , "libreoffice --writer"  }
 }
 -- END office menu
 
