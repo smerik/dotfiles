@@ -14,6 +14,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+# Start XScreenSaver daemon
+exec xscreensaver -no-splash &
+
 # Start window manager
 exec awesome & wmpid=$!
 
@@ -22,3 +25,6 @@ exec awesome & wmpid=$!
 
 # Wait until window manager has stopped
 wait $wmpid
+
+# Exit XScreenSaver process gracefully
+exec xscreensaver-command -exit
