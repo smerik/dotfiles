@@ -14,3 +14,4 @@ The config files are used by and/or for the following applications:
 * [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
 * [Vim](http://www.vim.org)
 * [X.Org](http://www.x.org./wiki/)
+* [XScreenSaver](http://www.jwz.org/xscreensaver/)
