@@ -89,10 +89,10 @@ end
 -- {{{ Menu
 -- START awesome menu
 myawesomemenu = {
-  { "manual"      , terminal .. " -e man awesome" },
-  { "edit config" , editor_cmd .. " " .. awesome.conffile },
-  { "restart"     , awesome.restart },
-  { "quit"        , awesome.quit }
+  { "manual"     , terminal .. " -e man awesome" },
+  { "edit config", editor_cmd .. " " .. awesome.conffile },
+  { "restart"    , awesome.restart },
+  { "quit"       , awesome.quit }
 }
 -- END awesome menu
 
@@ -175,10 +175,10 @@ myutilmenu = {
 
 -- START system menu
 mymachinemenu = {
-  { "reboot"     , "" },
-  { "shutdown"   , "" },
-  { "stand by"   , "" },
-  { "suspend"    , "" }
+  { "reboot"  , "" },
+  { "shutdown", "" },
+  { "stand by", "" },
+  { "suspend" , "" }
 }
 
 mysystemmenu = {
