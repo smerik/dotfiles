@@ -10,7 +10,10 @@ The config files are used by and/or for the following software:
 
 * [awesome](http://awesome.naquadah.org) (window manager)
 * [Bash](http://www.gnu.org/software/bash/bash.html) (shell)
+* [Chromium](http://www.chromium.org/Home) (web browser)
+* [Firefox](http://www.mozilla.org/projects/firefox/) (web browser)
 * [git](http://git-scm.com) (version control)
+* [Opera](http://www.opera.com/browser/) (web browser)
 * [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) (terminal
   emulator)
 * [scrot](http://scrot.sourcearchive.com/) (screen capture utility)

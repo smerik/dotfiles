@@ -108,9 +108,9 @@ mydevelopmentmenu = {
 
 -- START internet menu
 mybrowsermenu = {
-  { "Chromium", "" },
-  { "Firefox" , "" },
-  { "Opera"   , "" }
+  { "Chromium", "chromium" },
+  { "Firefox" , "firefox" },
+  { "Opera"   , "opera" }
 }
 
 mychatmenu = {
