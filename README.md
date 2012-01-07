@@ -13,6 +13,7 @@ The config files are used by and/or for the following software:
 * [git](http://git-scm.com) (version control)
 * [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) (terminal
   emulator)
+* [scrot](http://scrot.sourcearchive.com/) (screen capture utility)
 * [Vim](http://www.vim.org) (text editor)
 * [X.Org](http://www.x.org./wiki/) (X Window System)
 * [XScreenSaver](http://www.jwz.org/xscreensaver/) (screen saver)

@@ -161,10 +161,12 @@ myofficemenu = {
 
 
 -- START util menu
+local filename = "%Y%m%d_%H%M%S-$wx$h.png"
+local movetoscreenshotsdir = "'mv $f ~/screenshots'"
 myscreenshotmenu = {
-  { "5 s delay", "" },
-  { "frame"    , "" },
-  { "desktop"  , "" }
+  { "5 s delay", "scrot -e " .. movetoscreenshotsdir .. " -d 5 " .. filename },
+  { "frame"    , "scrot -e " .. movetoscreenshotsdir .. " -s "   .. filename },
+  { "desktop"  , "scrot -e " .. movetoscreenshotsdir .. " "      .. filename }
 }
 
 myutilmenu = {
