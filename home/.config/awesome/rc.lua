@@ -113,14 +113,14 @@ mybrowsermenu = {
   { "Opera"   , "opera" }
 }
 
-mychatmenu = {
-  { "Pidgin" , "" },
-  { "WeeChat", "" }
+mysocialmenu = {
+  { "chat" , "" },
+  { "irc", "" }
 }
 
 myinternetmenu = {
   { "browser", mybrowsermenu },
-  { "chat"   , mychatmenu },
+  { "social" , mysocialmenu },
   { "mail"   , "mutt" }
 }
 -- END internet menu
