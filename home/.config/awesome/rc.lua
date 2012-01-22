@@ -114,9 +114,10 @@ mybrowsermenu = {
 }
 
 mysocialmenu = {
-  { "chat", "" },
-  { "irc" , "" },
-  { "mail", "mutt" }
+  { "chat"   , "" },
+  { "irc"    , "" },
+  { "mail"   , "mutt" },
+  { "twitter", ""}
 }
 
 myinternetmenu = {
