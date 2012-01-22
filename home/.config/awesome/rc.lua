@@ -121,7 +121,7 @@ mychatmenu = {
 myinternetmenu = {
   { "browser", mybrowsermenu },
   { "chat"   , mychatmenu },
-  { "mail"   , "" }
+  { "mail"   , "mutt" }
 }
 -- END internet menu
 

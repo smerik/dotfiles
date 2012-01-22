@@ -1,0 +1,6 @@
+# -*- muttrc -*-
+#
+# Main configuration file.
+#
+source ~/.mutt/sourced/variables
+source ~/.mutt/sourced/mailboxes

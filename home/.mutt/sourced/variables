@@ -1,0 +1,14 @@
+# -*- muttrc -*-
+#
+
+# folder
+set folder=~/.mutt/mail
+
+# header
+set header_cache=~/.cache/mutt/header
+
+# index
+set sort=threads
+
+# thread
+set sort_aux=reverse-last-date-received

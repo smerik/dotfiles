@@ -13,6 +13,7 @@ The config files are used by and/or for the following software:
 * [Chromium](http://www.chromium.org/Home) (web browser)
 * [Firefox](http://www.mozilla.org/projects/firefox/) (web browser)
 * [git](http://git-scm.com) (version control)
+* [Mutt](http://www.mutt.org/) (mail client)
 * [Opera](http://www.opera.com/browser/) (web browser)
 * [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) (terminal
   emulator)
