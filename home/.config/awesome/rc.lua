@@ -106,6 +106,70 @@ mydevelopmentmenu = {
 -- END development menu
 
 
+-- START game menu
+myadventuremenu = {
+}
+
+myarcademenu = {
+  { "Bub-n-Bros"     , "" },
+  { "BurgerSpace"    , "" }
+}
+
+myplatformmenu = {
+  { "Pingus"         , "" },
+  { "Princed"        , "" }
+}
+
+myroleplayingmenu = {
+}
+
+myshootermenu = {
+  { "BZFlag"         , "" }
+}
+
+mysimulationmenu = {
+  { "CorsixTH"      , "" },
+  { "Lincity"       , "" },
+  { "Lincity-NG"    , "" },
+  { "Micropolis"    , "" },
+  { "OpenCity"      , "" },
+  { "OpenSkyscraper", "" },
+  { "OpenTTD"       , "" },
+  { "Simutrans"     , "" }
+}
+
+mysolitairemenu = {
+  { "freecell..", "" },
+  { "mahjong.." , "" }
+}
+
+mysportsmenu = {
+}
+
+mystrategymenu = {
+  { "0 A.D."          , "" },
+  { "Freeciv"         , "" },
+  { "OpenRA"          , "" },
+  { "Stargus"         , "" },
+  { "Unknown Horizons", "" },
+  { "War1gus"         , "" },
+  { "Wargus"          , "" }
+}
+
+mygamemenu = {
+  { "adventure"   , myadventuremenu },
+  { "arcade"      , myarcademenu },
+  { "platform"    , myplatformmenu },
+  { "role-playing", myroleplayingmenu },
+  { "shooter"     , myshootermenu },
+  { "simulation"  , mysimulationmenu },
+  { "solitaire"   , mysolitairemenu },
+  { "sports"      , mysportsmenu },
+  { "strategy"    , mystrategymenu }
+}
+-- END game menu
+
+
 -- START internet menu
 mybrowsermenu = {
   { "Chromium", "chromium" },
@@ -198,6 +262,7 @@ mymainmenu = awful.menu(
     items = {
       { "awesome"      , myawesomemenu, beautiful.awesome_icon },
       { "development"  , mydevelopmentmenu },
+      { "game"         , mygamemenu },
       { "internet"     , myinternetmenu },
       { "media"        , mymediamenu },
       { "office"       , myofficemenu },
