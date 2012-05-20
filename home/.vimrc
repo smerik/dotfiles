@@ -12,9 +12,9 @@ filetype indent on             " Autoload the indent file (if there is one for t
 " ----------------------------------------------------------------------------
 set nocompatible               " Disable vi compatibility
 
+" Colors
+syntax on                      " Enable syntax highlighting
+
 " Mappings
 " ----------------------------------------------------------------------------
 let mapleader = ','            " Map leader key
-
-" Colors
-syntax on                      " Enable syntax highlighting
