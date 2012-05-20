@@ -10,5 +10,7 @@ filetype indent on             " Autoload the indent file (if there is one for t
 
 set nocompatible               " Disable vi compatibility
 
+let mapleader = ','            " Map leader key
+
 " Colors
 syntax on                      " Enable syntax highlighting
