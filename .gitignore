@@ -2,4 +2,5 @@
 #########################
 home/.cache/
 home/.mutt/mail/
+home/.vim/autoload/
 home/screenshots/
