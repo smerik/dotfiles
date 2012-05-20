@@ -11,6 +11,7 @@ filetype indent on             " Autoload the indent file (if there is one for t
 " Basic options
 " ----------------------------------------------------------------------------
 set nocompatible               " Disable vi compatibility
+set nomodeline                 " Disable modelines for security measures
 
 " Colors
 syntax on                      " Enable syntax highlighting
