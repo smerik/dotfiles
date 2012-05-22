@@ -26,6 +26,14 @@ set tabstop=2                  " Number of spaces that a <Tab> in the file count
 set expandtab                  " In Insert mode: Use the appropriate number of spaces to insert a <Tab>
 set smarttab                   " A <Tab> in front of a line inserts blanks according to 'shiftwidth'. A <BS> will delete a 'shiftwidth' worth of space at the start of the line.
 
+" Searching
+set ignorecase                 " Ignore case in search patterns.
+set smartcase                  " Override the 'ignorecase' option if the search pattern contains upper case characters.
+set incsearch                  " While typing a search command, show where the pattern, as it was typed so far, matches.
+set showmatch                  " When a bracket is inserted, briefly jump to the matching one. The jump is only done if the match can be seen on the screen.
+set hlsearch                   " When there is a previous search pattern, highlight all its matches.
+set gdefault                   " Use the ":substitute" flag 'g' by default
+
 " Mappings
 " ----------------------------------------------------------------------------
 let mapleader = ','            " Map leader key
