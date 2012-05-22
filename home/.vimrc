@@ -32,7 +32,7 @@ set smartcase                  " Override the 'ignorecase' option if the search 
 set incsearch                  " While typing a search command, show where the pattern, as it was typed so far, matches.
 set showmatch                  " When a bracket is inserted, briefly jump to the matching one. The jump is only done if the match can be seen on the screen.
 set hlsearch                   " When there is a previous search pattern, highlight all its matches.
-set gdefault                   " Use the ":substitute" flag 'g' by default
+set gdefault                   " Use the ':substitute' flag 'g' by default
 
 " Mappings
 " ----------------------------------------------------------------------------
