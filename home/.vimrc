@@ -10,6 +10,7 @@ filetype indent on             " Autoload the indent file (if there is one for t
 
 " Basic options
 " ----------------------------------------------------------------------------
+set encoding=utf-8             " Set character code used inside Vim
 set nocompatible               " Disable vi compatibility
 set nomodeline                 " Disable modelines for security measures
 
