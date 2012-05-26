@@ -42,3 +42,9 @@ inoremap jj <esc>
 
 " Stop the search highlighting
 map <silent> \ :silent nohlsearch<cr>
+
+" Move between windows
+map <c-h> <c-w>h
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
