@@ -1,3 +1,6 @@
+[submodule "home/.vim/bundle/delimitMate"]
+	path = home/.vim/bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
 [submodule "home/.vim/bundle/nerdcommenter"]
 	path = home/.vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
