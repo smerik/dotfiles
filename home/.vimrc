@@ -15,9 +15,6 @@ set nocompatible               " Disable Vi compatibility
 set nomodeline                 " Disable modelines for security measures
 set ttyfast                    " Indicate fast terminal connection
 
-" Colors
-syntax on                      " Enable syntax highlighting
-
 " Formatting
 set autoindent                 " Copy indent from current line when starting a new line
 set smartindent                " Do smart autoindenting when starting a new line
@@ -52,6 +49,9 @@ map <c-l> <c-w>l
 
 " UI
 " ----------------------------------------------------------------------------
+
+" Colors
+syntax on                      " Enable syntax highlighting
 
 " See difference between spaces, tabs and trailing blanks
 set list                       " Enable list mode
