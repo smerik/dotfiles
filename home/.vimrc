@@ -48,3 +48,12 @@ map <c-h> <c-w>h
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
+
+" UI
+" ----------------------------------------------------------------------------
+
+" See difference between spaces, tabs and trailing blanks
+set list                       " Enable list mode
+set listchars=eol:¬            " Character to show at the end of each line
+set listchars+=tab:▸\          " Characters to be used to show a <tab>
+set listchars+=trail:·         " Character to show for trailing spaces
