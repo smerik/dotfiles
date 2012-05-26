@@ -13,6 +13,7 @@ filetype indent on             " Autoload the indent file (if there is one for t
 set encoding=utf-8             " Set character code used inside Vim
 set nocompatible               " Disable Vi compatibility
 set nomodeline                 " Disable modelines for security measures
+set ttyfast                    " Indicate fast terminal connection
 
 " Colors
 syntax on                      " Enable syntax highlighting
