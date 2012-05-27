@@ -47,6 +47,9 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 
+" Toggle spell checking
+nmap <silent> <leader>ts :set spell!<cr>
+
 " UI
 " ----------------------------------------------------------------------------
 
