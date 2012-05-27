@@ -52,6 +52,7 @@ map <c-l> <c-w>l
 
 " Colors
 syntax on                      " Enable syntax highlighting
+colorscheme railscasts         " Load color scheme
 
 " See difference between spaces, tabs and trailing blanks
 set list                       " Enable list mode
