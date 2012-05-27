@@ -32,7 +32,7 @@ set showmatch                  " When a bracket is inserted, briefly jump to the
 set hlsearch                   " When there is a previous search pattern, highlight all its matches.
 set gdefault                   " Use the ':substitute' flag 'g' by default
 
-" Mappings
+" Key mappings
 " ----------------------------------------------------------------------------
 let mapleader = ','            " Map leader key
 
