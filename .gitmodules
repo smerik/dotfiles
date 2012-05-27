@@ -6,10 +6,10 @@
 	url = git://github.com/scrooloose/nerdcommenter.git
 [submodule "home/.vim/bundle/nerdtree"]
 	path = home/.vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = git://github.com/scrooloose/nerdtree.git
 [submodule "home/.vim/bundle/railscasts-vim"]
 	path = home/.vim/bundle/railscasts-vim
-	url = https://github.com/smerik/railscasts-vim
+	url = git://github.com/smerik/railscasts-vim.git
 [submodule "home/.vim/bundle/vim-fugitive"]
 	path = home/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
