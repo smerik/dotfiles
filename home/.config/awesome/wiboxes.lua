@@ -1,3 +1,5 @@
+require("menu")            -- Menu
+require("tags")            -- Tags
 require("widgets")
 
 -- Create a wibox for each screen and add it
