@@ -43,7 +43,7 @@ end
 require("variables")       -- Variable definitions
 require("tags")            -- Tags
 require("menu")            -- Menu
-require("widgets")         -- Wibox
+require("wiboxes")         -- Statusbars, titlebars, etc.
 require("mouse_bindings")  -- Mouse bindings
 require("keys")            -- Key bindings
 require("rules")           -- Rules
