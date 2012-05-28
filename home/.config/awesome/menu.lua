@@ -40,6 +40,7 @@ myshootermenu = {
 
 mysimulationmenu = {
   { "CorsixTH"      , "" },
+  { "FlightGear"    , "" },
   { "Lincity"       , "" },
   { "Lincity-NG"    , "" },
   { "Micropolis"    , "" },
