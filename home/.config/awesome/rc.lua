@@ -1,11 +1,8 @@
--- Standard awesome library
-require("awful")
-require("awful.autofocus")
-require("awful.rules")
--- Theme handling library
-require("beautiful")
--- Notification library
-require("naughty")
+require("awful")           -- AWesome Functions very UsefuL
+require("awful.autofocus") -- Makes sure there's always a client that will have focus on an event
+require("awful.rules")     -- Apply rules to clients at startup
+require("beautiful")       -- Theme library
+require("naughty")         -- Notification library
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -43,35 +40,11 @@ do
   )
 end
 -- }}}
-
--- {{{ Variable definitions
-require("variables")
--- }}}
-
--- {{{ Tags
-require("tags")
--- }}}
-
---- {{{ Menu}
-require("menu")
--- }}}
-
--- {{{ Wibox
-require("widgets")
--- }}}
-
--- {{{ Mouse bindings
-require("mouse_bindings")
--- }}}
-
--- {{{ Key bindings
-require("keys")
--- }}}
-
--- {{{ Rules
-require("rules")
--- }}}
-
--- {{{ Signals
-require("signals")
--- }}}
+require("variables")       -- Variable definitions
+require("tags")            -- Tags
+require("menu")            -- Menu
+require("widgets")         -- Wibox
+require("mouse_bindings")  -- Mouse bindings
+require("keys")            -- Key bindings
+require("rules")           -- Rules
+require("signals")         -- Signals
