@@ -15,7 +15,7 @@ globalkeys = awful.util.table.join(
       if client.focus then client.focus:raise() end
     end
   ),
-  awful.key({ modkey,           }, "w", function () mymainmenu:show({ keygrabber=true }) end),
+  awful.key({ modkey,           }, "w", function () mainmenu:show({ keygrabber=true }) end),
 
   -- Layout manipulation
   awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
@@ -49,12 +49,12 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
   -- Prompt
-  awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+  awful.key({ modkey },            "r",     function () promptbox[mouse.screen]:run() end),
 
   awful.key({ modkey }, "x",
     function ()
       awful.prompt.run({ prompt = "Run Lua code: " },
-      mypromptbox[mouse.screen].widget,
+      promptbox[mouse.screen].widget,
       awful.util.eval, nil,
       awful.util.getdir("cache") .. "/history_eval")
     end

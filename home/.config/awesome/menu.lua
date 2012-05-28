@@ -1,5 +1,5 @@
 -- START awesome menu
-myawesomemenu = {
+awesomemenu = {
   { "manual"     , terminal .. " -e man awesome" },
   { "edit config", editor_cmd .. " " .. awesome.conffile },
   { "restart"    , awesome.restart },
@@ -9,7 +9,7 @@ myawesomemenu = {
 
 
 -- START development menu
-mydevelopmentmenu = {
+developmentmenu = {
   { "Eclipse" , "" },
   { "NetBeans", "" },
   { "Vim"     , "" }
@@ -18,27 +18,27 @@ mydevelopmentmenu = {
 
 
 -- START game menu
-myadventuremenu = {
+adventuremenu = {
 }
 
-myarcademenu = {
+arcademenu = {
   { "Bub-n-Bros"     , "" },
   { "BurgerSpace"    , "" }
 }
 
-myplatformmenu = {
+platformmenu = {
   { "Pingus"         , "" },
   { "Princed"        , "" }
 }
 
-myroleplayingmenu = {
+roleplayingmenu = {
 }
 
-myshootermenu = {
+shootermenu = {
   { "BZFlag"         , "" }
 }
 
-mysimulationmenu = {
+simulationmenu = {
   { "CorsixTH"      , "" },
   { "FlightGear"    , "" },
   { "Lincity"       , "" },
@@ -50,15 +50,15 @@ mysimulationmenu = {
   { "Simutrans"     , "" }
 }
 
-mysolitairemenu = {
+solitairemenu = {
   { "freecell..", "" },
   { "mahjong.." , "" }
 }
 
-mysportsmenu = {
+sportsmenu = {
 }
 
-mystrategymenu = {
+strategymenu = {
   { "0 A.D."          , "" },
   { "Freeciv"         , "" },
   { "OpenRA"          , "" },
@@ -68,65 +68,65 @@ mystrategymenu = {
   { "Wargus"          , "" }
 }
 
-mygamemenu = {
-  { "adventure"   , myadventuremenu },
-  { "arcade"      , myarcademenu },
-  { "platform"    , myplatformmenu },
-  { "role-playing", myroleplayingmenu },
-  { "shooter"     , myshootermenu },
-  { "simulation"  , mysimulationmenu },
-  { "solitaire"   , mysolitairemenu },
-  { "sports"      , mysportsmenu },
-  { "strategy"    , mystrategymenu }
+gamemenu = {
+  { "adventure"   , adventuremenu },
+  { "arcade"      , arcademenu },
+  { "platform"    , platformmenu },
+  { "role-playing", roleplayingmenu },
+  { "shooter"     , shootermenu },
+  { "simulation"  , simulationmenu },
+  { "solitaire"   , solitairemenu },
+  { "sports"      , sportsmenu },
+  { "strategy"    , strategymenu }
 }
 -- END game menu
 
 
 -- START internet menu
-mybrowsermenu = {
+browsermenu = {
   { "Chromium", "chromium" },
   { "Firefox" , "firefox" },
   { "Opera"   , "opera" }
 }
 
-mysocialmenu = {
+socialmenu = {
   { "chat"   , "" },
   { "irc"    , "" },
   { "mail"   , "mutt" },
   { "twitter", ""}
 }
 
-myinternetmenu = {
-  { "browser", mybrowsermenu },
-  { "social" , mysocialmenu }
+internetmenu = {
+  { "browser", browsermenu },
+  { "social" , socialmenu }
 }
 -- END internet menu
 
 
 -- START media menu
-myaudiomenu = {
+audiomenu = {
   { "Audacity", "" },
   { "ncmpc++" , "" }
 }
 
-myimagemenu = {
+imagemenu = {
   { "GIMP", "" }
 }
 
-myvideomenu = {
+videomenu = {
   { "", "" }
 }
 
-mymediamenu = {
-  { "audio", myaudiomenu },
-  { "image", myimagemenu },
-  { "video", myvideomenu }
+mediamenu = {
+  { "audio", audiomenu },
+  { "image", imagemenu },
+  { "video", videomenu }
 }
 -- END media menu
 
 
 -- START office menu
-myofficemenu = {
+officemenu = {
   { "Base"   , "libreoffice --base"    },
   { "Calc"   , "libreoffice --calc"    },
   { "Draw"   , "libreoffice --draw"    },
@@ -140,28 +140,28 @@ myofficemenu = {
 -- START util menu
 local filename = "%Y%m%d_%H%M%S-$wx$h.png"
 local movetoscreenshotsdir = "'mv $f ~/screenshots'"
-myscreenshotmenu = {
+screenshotmenu = {
   { "5 s delay", "scrot -e " .. movetoscreenshotsdir .. " -d 5 " .. filename },
   { "frame"    , "scrot -e " .. movetoscreenshotsdir .. " -s "   .. filename },
   { "desktop"  , "scrot -e " .. movetoscreenshotsdir .. " "      .. filename }
 }
 
-myutilmenu = {
-  { "screenshot", myscreenshotmenu }
+utilmenu = {
+  { "screenshot", screenshotmenu }
 }
 -- END util menu
 
 
 -- START system menu
-mymachinemenu = {
+machinemenu = {
   { "reboot"  , "" },
   { "shutdown", "" },
   { "stand by", "" },
   { "suspend" , "" }
 }
 
-mysystemmenu = {
-  { "machine"    , mymachinemenu },
+systemmenu = {
+  { "machine"    , machinemenu },
   { "lock screen", "" },
   { "update"     , "" }
 }
@@ -169,25 +169,25 @@ mysystemmenu = {
 
 
 -- Now let's combine all pieces together
-mymainmenu = awful.menu(
+mainmenu = awful.menu(
   {
     items = {
-      { "awesome"      , myawesomemenu, beautiful.awesome_icon },
-      { "development"  , mydevelopmentmenu },
-      { "game"         , mygamemenu },
-      { "internet"     , myinternetmenu },
-      { "media"        , mymediamenu },
-      { "office"       , myofficemenu },
-      { "system"       , mysystemmenu },
-      { "util"         , myutilmenu },
+      { "awesome"      , awesomemenu, beautiful.awesome_icon },
+      { "development"  , developmentmenu },
+      { "game"         , gamemenu },
+      { "internet"     , internetmenu },
+      { "media"        , mediamenu },
+      { "office"       , officemenu },
+      { "system"       , systemmenu },
+      { "util"         , utilmenu },
       { "open terminal", terminal }
     }
   }
 )
 
-mylauncher = awful.widget.launcher(
+launcher = awful.widget.launcher(
   {
     image = image(beautiful.awesome_icon),
-    menu = mymainmenu
+    menu = mainmenu
   }
 )
