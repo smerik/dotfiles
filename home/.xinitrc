@@ -14,6 +14,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+if [ -f $HOME/.Xmodmap ]; then
+  /usr/bin/xmodmap $HOME/.Xmodmap
+fi
+
 # Start XScreenSaver daemon
 exec xscreensaver -no-splash &
 

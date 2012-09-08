@@ -36,8 +36,6 @@ set gdefault                   " Use the ':substitute' flag 'g' by default
 " ----------------------------------------------------------------------------
 let mapleader=','              " Map leader key
 
-inoremap jj <esc>
-
 " Stop the search highlighting
 map <silent> \ :silent nohlsearch<cr>
 
