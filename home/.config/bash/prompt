@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Define prompt statements (aka PS) and prompt command.
+
+PS1='[\u@\h \W]\$ '

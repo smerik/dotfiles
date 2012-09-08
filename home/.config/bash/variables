@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Define environment variables.
+
+export EDITOR='vim'
