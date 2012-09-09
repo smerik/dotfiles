@@ -60,3 +60,31 @@ set list                       " Enable list mode
 set listchars=eol:¬            " Character to show at the end of each line
 set listchars+=tab:▸\          " Characters to be used to show a <tab>
 set listchars+=trail:·         " Character to show for trailing spaces
+
+" Beautify status line
+" Inspired by statusline.vim: http://www.vim.org/scripts/script.php?script_id=3734
+" Define status bar colors
+hi default User1 ctermfg=15 ctermbg=22
+hi default User2 ctermfg=15 ctermbg=52
+hi default User3 ctermfg=0 ctermbg=3
+hi default User4 ctermfg=15 ctermbg=28
+" Always show status line
+set laststatus=2
+" Define empty status line
+set statusline=
+" Full path to file in buffer
+set statusline+=%1*%-52F
+" File format
+set statusline+=\ %2*\ %{&ff}"
+" File encoding
+set statusline+=\ %3*\ %{&fenc!=''?&fenc:&enc}
+" File type
+set statusline+=\ %1*\ %Y
+" Line number / column number - virtual column number
+set statusline+=\ %4*\ %04l/%03c-%03v
+" Hexadecimal value of character under cursor
+set statusline+=\ %2*\ 0x%04.4B
+" Current date & time
+set statusline+=\ %1*\ %-16{strftime(\"%Y-%m-%d\ %H:%M\")}
+" Modified flag
+set statusline+=\ %4*\ %-3m
