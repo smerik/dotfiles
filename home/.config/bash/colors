@@ -1,0 +1,76 @@
+#!/bin/bash
+#
+# Define color aliases.
+
+# Reset all color attributes
+rst_color='\e[0m'
+
+# Regular Colors
+black='\e[0;30m'
+red='\e[0;31m'
+green='\e[0;32m'
+yellow='\e[0;33m'
+blue='\e[0;34m'
+magenta='\e[0;35m'
+cyan='\e[0;36m'
+white='\e[0;37m'
+
+# Bold
+Bblack='\e[1;30m'
+Bred='\e[1;31m'
+Bgreen='\e[1;32m'
+Byellow='\e[1;33m'
+Bblue='\e[1;34m'
+Bmagenta='\e[1;35m'
+Bcyan='\e[1;36m'
+Bwhite='\e[1;37m'
+
+# Underline
+Ublack='\e[4;30m'
+Ured='\e[4;31m'
+Ugreen='\e[4;32m'
+Uyellow='\e[4;33m'
+Ublue='\e[4;34m'
+Umagenta='\e[4;35m'
+Ucyan='\e[4;36m'
+Uwhite='\e[4;37m'
+
+# Background
+on_black='\e[40m'
+on_red='\e[41m'
+on_green='\e[42m'
+on_yellow='\e[43m'
+on_blue='\e[44m'
+on_magenta='\e[45m'
+on_cyan='\e[46m'
+on_white='\e[47m'
+
+# High intensity
+Hblack='\e[0;90m'
+Hred='\e[0;91m'
+Hgreen='\e[0;92m'
+Hyellow='\e[0;93m'
+Hblue='\e[0;94m'
+Hmagenta='\e[0;95m'
+Hcyan='\e[0;96m'
+Hwhite='\e[0;97m'
+
+# Bold High intensity
+BHblack='\e[1;90m'
+BHred='\e[1;91m'
+BHgreen='\e[1;92m'
+BHyellow='\e[1;93m'
+BHblue='\e[1;94m'
+BHmagenta='\e[1;95m'
+BHcyan='\e[1;96m'
+BHwhite='\e[1;97m'
+
+# High intensity background
+on_Hblack='\e[100m'
+on_Hred='\e[101m'
+on_Hgreen='\e[102m'
+on_Hyellow='\e[103m'
+on_Hblue='\e[104m'
+on_Hmagenta='\e[105m'
+on_Hcyan='\e[106m'
+on_Hwhite='\e[107m'
