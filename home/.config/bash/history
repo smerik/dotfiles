@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Customize command history configuration.
+
+# The name of the file in which command history is saved
+export HISTFILE="${HOME}/.cache/bash/history"
+
+# The number of commands to remember
+export HISTSIZE=1000
+
+# Do not save lines beginning with a space character (aka ignorespace)
+# or matching the previous history entry (aka ignoredups)
+# Also erase all previous lines matching the current line
+export HISTCONTROL="ignoreboth:erasedups"
+
+# Append to the history file instead of overwriting it
+shopt -s histappend
+
+# Save all lines of a multiple-line command in the same history entry
+shopt -s cmdhist
