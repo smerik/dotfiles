@@ -2,4 +2,37 @@
 #
 # Define prompt statements (aka PS) and prompt command.
 
-PS1='[\u@\h \W]\$ '
+# Enable Git prompt support
+source /usr/share/git/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWUPSTREAM="auto"
+
+bash_prompt_cmd() {
+  RTN=$?
+
+  # Determine source control management information
+  scm_info() {
+    local s=
+    if [[ -d ".svn" ]] ; then
+      s="┤${green}svn${rst_color}:${cyan}$(svn info | grep '^URL': | egrep -o '(tags|branches)/[^/]+|trunk')${rst_color}├"
+    else
+      s=$(__git_ps1 "┤${green}git${rst_color}:${cyan}%s${rst_color}├")
+    fi
+    echo -n "$s"
+  }
+
+  # Show different color when root
+  local USER_COLOR=
+  [ $UID -eq "0" ] && USER_COLOR="${red}" || USER_COLOR="${green}"
+
+  # Create lines to be printed
+  local LINE1="┌┤${yellow}\t${rst_color}│${USER_COLOR}\u${rst_color}@${green}\h${rst_color}:${cyan}\w${rst_color}"
+  local LINE2="└$(scm_info)╼"
+
+  # Define Prompt Statements
+  export PS1="${LINE1}\n${LINE2} "
+  export PS2=" • "
+}
+PROMPT_COMMAND=bash_prompt_cmd
