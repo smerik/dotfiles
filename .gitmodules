@@ -13,3 +13,6 @@
 [submodule "home/.vim/bundle/vim-fugitive"]
 	path = home/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "home/.vim/bundle/vim-scripts"]
+	path = home/.vim/bundle/vim-scripts
+	url = http://fedorapeople.org/cgit/wwoods/public_git/vim-scripts.git
