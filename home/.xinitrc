@@ -22,7 +22,15 @@ fi
 exec xscreensaver -no-splash &
 
 # Start window manager
-exec awesome & wmpid=$!
+case "$1" in
+  awesome)
+    exec awesome &
+    ;;
+  *)
+    exec i3 &
+    ;;
+esac
+wmpid=$!
 
 # Start additional applications
 # TODO: implement me
