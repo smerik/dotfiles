@@ -2,6 +2,7 @@
 "
 
 " Use Pathogen for loading plugins
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 filetype on                    " Enable filetype detection
