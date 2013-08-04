@@ -13,6 +13,9 @@
 [submodule "home/.vim/bundle/railscasts-vim"]
 	path = home/.vim/bundle/railscasts-vim
 	url = https://github.com/smerik/railscasts-vim.git
+[submodule "home/.vim/bundle/syntastic"]
+	path = home/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "home/.vim/bundle/vim-fugitive"]
 	path = home/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
