@@ -1,0 +1,8 @@
+# Log files
+logs/
+
+# Secured data options
+sec.conf
+
+# WeeChat log file
+weechat.log
