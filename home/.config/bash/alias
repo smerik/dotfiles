@@ -3,3 +3,6 @@
 # Define aliases.
 
 alias ls='ls --color=auto'
+
+# Use different home path
+alias weechat='weechat -d ~/.config/weechat'
