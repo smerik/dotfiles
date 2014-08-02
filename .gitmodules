@@ -1,27 +1,3 @@
-[submodule "home/.vim/bundle/ctrlp.vim"]
-	path = home/.vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "home/.vim/bundle/delimitMate"]
-	path = home/.vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
-[submodule "home/.vim/bundle/editorconfig-vim"]
-	path = home/.vim/bundle/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "home/.vim/bundle/nerdcommenter"]
-	path = home/.vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "home/.vim/bundle/railscasts-vim"]
-	path = home/.vim/bundle/railscasts-vim
-	url = https://github.com/smerik/railscasts-vim.git
-[submodule "home/.vim/bundle/syntastic"]
-	path = home/.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "home/.vim/bundle/vim-fugitive"]
-	path = home/.vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "home/.vim/bundle/vim-pathogen"]
-	path = home/.vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "home/.vim/bundle/vim-scripts"]
-	path = home/.vim/bundle/vim-scripts
-	url = http://fedorapeople.org/cgit/wwoods/public_git/vim-scripts.git
+[submodule "home/.vim/bundle/neobundle.vim"]
+	path = home/.vim/bundle/neobundle.vim
+	url = https://github.com/Shougo/neobundle.vim.git

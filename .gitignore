@@ -2,5 +2,9 @@
 #########################
 home/.cache/
 home/.mutt/mail/
+
+# Vim
 home/.vim/autoload/
+home/.vim/bundle/
+
 home/screenshots/

@@ -1,9 +1,28 @@
 " .vimrc
 "
 
-" Use Pathogen for loading plugins
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Use NeoBundle for managing & loading plugins
+" ----------------------------------------------------------------------------
+call neobundle#begin(expand('~/.vim/bundle'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'       " Let NeoBundle manage NeoBundle
+NeoBundle 'kien/ctrlp.vim'                  " Full path fuzzy file, buffer, mru, tag, ... finder
+NeoBundle 'Raimondi/delimitMate'            " Provides auto-balancing and some expansions for parens, quotes, etc
+NeoBundle 'editorconfig/editorconfig-vim'   " EditorConfig plugin
+NeoBundle 'scrooloose/nerdcommenter'        " plugin for intensely orgasmic commenting
+NeoBundle 'smerik/railscasts-vim'           " railscasts color theme that works in 256color terminals as well as gui
+NeoBundle 'scrooloose/syntastic'            " Syntax checking hacks
+NeoBundle 'tpope/vim-fugitive'              " A Git wrapper so awesome, it should be illegal
+
+" Plugins not on GitHub
+" ---------------------
+NeoBundle 'https://fedorapeople.org/cgit/wwoods/public_git/vim-scripts.git'
+
+call neobundle#end()
 
 filetype on                    " Enable filetype detection
 filetype plugin on             " Autoload the plugin file (if there is one for the detected filetype)
